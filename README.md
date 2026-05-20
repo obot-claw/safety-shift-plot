@@ -53,3 +53,18 @@ The code to load a comma-delimited data set and initialize the customized chart,
 - [API](https://github.com/RhoInc/safety-shift-plot/wiki/API)
 - [Technical Documentation](https://github.com/RhoInc/safety-shift-plot/wiki/Technical-Documentation) 
 - [Data Guidelines](https://github.com/RhoInc/safety-shift-plot/wiki/Data-Guidelines)
+
+## P004 nextgen functional requirements status
+
+This section tracks the nextgen Chart.js spike against the legacy wiki requirements. The current spike is intentionally partial; unmet items become migration backlog before any replacement release.
+
+| Requirement area | Legacy requirement summary | Spike status |
+|---|---|---|
+| Measure filter | Select measure for baseline/comparison display. | Implemented in spike. |
+| Baseline/comparison visits | Select baseline visit and comparison visit. | Partial: single baseline and comparison selectors implemented. |
+| Participant count | Display enrolled/randomized or shown participant count. | Partial: participants with baseline and comparison values shown. |
+| Scatter display | Show baseline vs comparison values. | Implemented as Chart.js scatter. |
+| Hover details | Show subject ID, baseline, comparison, change, and percent change. | Partial: tooltip includes ID, values, and change; percent change not yet included. |
+| Brush/listing | Drag/select points to show detailed table and highlight region. | Partial: click point listing implemented; brush selection not implemented. |
+| Box/whisker marginal summaries | Show distribution summaries for selected axes. | Not started. |
+| Regression coverage | Validate filters, visits, tooltips, selection/listing, and participant count. | Not started; requires automated browser tests. |
